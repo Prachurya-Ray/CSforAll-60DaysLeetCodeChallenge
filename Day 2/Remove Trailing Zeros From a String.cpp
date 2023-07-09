@@ -39,3 +39,14 @@ public:
         return num.substr(0, i+1);
     }
 };
+
+//Optimized
+
+class Solution {
+public:
+    string removeTrailingZeros(string num) {
+        while(num.back()=='0')
+            num.pop_back();
+        return num;
+    }
+};
